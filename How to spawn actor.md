@@ -1,6 +1,9 @@
 # In Header file:
 ```css
 #include "Engine/World.h"
+
+UPROPERTY(EditAnywhere)
+TSubclassOf<AActor> ActorToSpawn;
 ```
 # In cpp file:
 ```css
