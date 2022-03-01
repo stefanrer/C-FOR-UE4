@@ -7,7 +7,7 @@ TSubclassOf<AActor> ActorToSpawn;
 ```
 # In cpp file:
 ```css
-UWorld *WRLD = GetWorld();
+UWorld *WRLD = GetWorld(); //Store Uworld object into a UWorld pointer, GetWorld() func returns the current UWorld object
 FVector location = GetActorLocation();
 FRotator rotation = GetActorRotation();
 WRLD->SpawnActor(ActorToSpawn, &location, &rotation);
