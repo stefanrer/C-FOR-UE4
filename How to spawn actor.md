@@ -1,12 +1,11 @@
 # In Header file:
 ```css
-#include "Engine/World.h"
-
 UPROPERTY(EditAnywhere)
 TSubclassOf<AActor> ActorToSpawn;
 ```
 # In cpp file:
 ```css
+#include "Engine/World.h"
 UWorld *WRLD = GetWorld(); //Store Uworld object into a UWorld pointer, GetWorld() func returns the current UWorld object
 FVector location = GetActorLocation();
 FRotator rotation = GetActorRotation();
