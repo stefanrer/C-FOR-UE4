@@ -3,6 +3,9 @@
 UPROPERTY(EditAnywhere)
 TSubclassOf<AActor> ActorToSpawn;
 ```
+# Notes
+***
+To set class in c++ write - TSubclassOf<AActor> ActorToSpawn = AActor::StaticClass();
 # In cpp file:
 ```css
 #include "Engine/World.h"
