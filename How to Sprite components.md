@@ -1,4 +1,6 @@
 # How to add Sprite Component
+## In Build.cs file:
+add "Paper2D" to module list -> `PublicDependencyModuleNames.AddRange(new string[] {"Core", "CoreUObject", "Engine", "InputCore"});`
 ## In Header file:
 ```css
 #include "PaperSpriteComponent.h"
