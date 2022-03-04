@@ -2,7 +2,7 @@
 ## In Build.cs file:
 Add "Paper2D" to module list -> `PublicDependencyModuleNames.AddRange(new string[] {"Core", "CoreUObject", "Engine", "InputCore"});`
 
-+ Include Paper2D path for studio users
++Include Paper2D path for studio users
 ## In Header file:
 ```css
 #include "PaperSpriteComponent.h"
