@@ -2,14 +2,26 @@
 1. Create c++ class with `Unreal Interface` as Parent Class -> name it smth like InteractInterface
 2. Header file ->Create interface functions (Declare) in `class GAMENAME_API IInteractInterface`
 ```css
-UFUNCTION()
-virtual void OnInteract(AActor* Caller); //virtual if not blueprint implementable
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Interaction")
+	void OnInteract(AActor* Caller);
 ```
-3.Implement it in Actor
+3.Implement it in Actor Header
 ```css
 #include "InteractInterface.h"
 
 class GAMENAME_API AScriptname : public AParent, public IInteractInterface
+.
+.
+.
+UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Interaction")
+void OnInteract(AActor* Caller);
+virtual void OnInteract_Implementation(AActor* Caller);
 ```
-4.Repeat point 2 for this Actor
-5.Define functions in cpp
+4. cpp file
+```css
+void AInteractableBase::OnInteract_Implementation(AActor* Caller)
+{
+	IInteractInterface::OnInteract_Implementation(Caller);
+}
+```
+
