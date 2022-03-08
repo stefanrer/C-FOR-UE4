@@ -29,3 +29,6 @@ TimerDel.BindUFunction(this, FName("MyUsefulFunction"), MyInt, MyFloat);
 //Calling MyUsefulFunction after 5 seconds without looping
 GetWorldTimerManager().SetTimer(TimerHandle, TimerDel, 5.f, false);
 ```
+## Note
+***
+UFUNCTION() in Header neccesary or crash!
