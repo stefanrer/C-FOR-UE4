@@ -21,9 +21,9 @@ RoomChildActors.Add(Name1); // Add child component to array
 # Delete components
 ```css
 for (UChildActorComponent* Child : RoomChildActors)
-		{
-			Child->UnregisterComponent();
-			Child->DestroyComponent();
-		}
+{
+	Child->UnregisterComponent();
+	Child->DestroyComponent();
+}
 RoomChildActors.Empty();
 ```
