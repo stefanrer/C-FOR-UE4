@@ -14,3 +14,4 @@ UE_LOG(LogTemp, Warning, TEXT("Move Forward axis: %f"), AxisValue);
 ### Note
 ***
 `CategoryName`, `Verbosity`, `Format`
+https://subscription.packtpub.com/book/game-development/9781785885549/1/ch01lvl1sec20/ue4-logging-with-ue-log
