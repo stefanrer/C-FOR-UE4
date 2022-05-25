@@ -9,7 +9,7 @@ TArray<UChildActorComponent*> RoomChildActors; // Array for storing child compon
 UChildActorComponent* Name1 = NewObject<UChildActorComponent>(this); // Need number after name or error
 Name1->bEditableWhenInherited = true; // If child should be editable
 Name1->RegisterComponent(); // Register component physics etc
-Name1->SetChildActorClass(ALeftLowerAndRightUpperCorner::StaticClass());
+Name1->SetChildActorClass(AActorName::StaticClass()); // Set child actor
 Name1->CreateChildActor();
 location = GetActorLocation(); 
 rotation = GetActorRotation();
