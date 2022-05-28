@@ -1,0 +1,4 @@
+# cpp
+```css
+GetWorld()->GetDeltaSeconds()
+```
