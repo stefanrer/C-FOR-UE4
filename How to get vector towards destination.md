@@ -1,0 +1,1 @@
+Normalize(EndLocation-StartLocation)
