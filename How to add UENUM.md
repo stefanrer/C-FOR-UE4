@@ -16,7 +16,7 @@ TEnumAsByte<EStatus> status;
 
 # How to make a Switch
 ```css
-switch (EStatus)
+switch (status)
 	{
 	case (EStatus::Stopped):
 		do_something();
